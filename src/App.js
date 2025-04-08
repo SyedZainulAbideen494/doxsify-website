@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<ComingSoonPage />} />,
-        <Route path="/landing" element={<Website />} />,
+        <Route path="/landing" element={<ComingSoonPage />} />,
+        <Route path="*"  element={<Website />} />,
       </Routes>
     </Router>
   );
