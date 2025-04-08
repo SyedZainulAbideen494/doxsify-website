@@ -1,91 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-:root {
-  --neon-purple: #a855f7;
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --gradient-dark: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-}
-
-body, html {
+/* Reset + Base */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: var(--gradient-dark);
-  color: white;
-  height: 100vh;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.landing-container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
-.glass-card {
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 60px 40px;
-  text-align: center;
-  z-index: 2;
-  box-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.title {
-  font-size: 3.5rem;
-  color: var(--neon-purple);
-  text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple);
-  margin: 0;
+ul {
+  list-style: none;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.launch-btn {
-  padding: 15px 30px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 30px;
-  background: var(--neon-purple);
-  color: white;
+button {
+  font-family: inherit;
   cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px var(--neon-purple), 0 0 30px var(--neon-purple);
+  border: none;
+  outline: none;
+  background: none;
 }
 
-.launch-btn:hover {
-  background: white;
-  color: var(--neon-purple);
-  box-shadow: 0 0 20px white, 0 0 50px white;
-}
-
-.neon-glow {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, var(--neon-purple), transparent 70%);
-  filter: blur(150px);
-  animation: pulse 5s infinite ease-in-out;
-  z-index: 0;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
+img {
+  max-width: 100%;
+  display: block;
 }

@@ -1,0 +1,77 @@
+/* Section Styling */
+.comparison-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    border-radius: 15px;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Glass border */
+    margin-left: auto;
+    margin-right: auto; /* Center horizontally */
+  }
+  
+  /* Content Container */
+  .comparison-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+  }
+  
+  /* Comparison Item */
+  .comparison-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Image Styling */
+  .comparison-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+  }
+  
+  /* Divider Between Images */
+  .comparison-divider {
+    width: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    height: 100%;
+  }
+  
+  /* Labels for Images */
+  .comparison-label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ccc;
+    font-weight: 600;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .comparison-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .comparison-img {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .comparison-divider {
+      display: none; /* Hide the divider on smaller screens */
+    }
+  }
+  

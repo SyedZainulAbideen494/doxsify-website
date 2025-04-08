@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DoxsifyLandingPage from "./landing page/DoxsifyLandingPage"; // Ensure path is correct
 import ComingSoonPage from "./coming coon/ComingSoonPage";
+import Website from "./website/websiteMain";
 
 function App() {
   console.log("App is running");
@@ -9,7 +10,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<ComingSoonPage />} /> {/* Renders DoxsifyLandingPage */}
+        <Route path="*" element={<ComingSoonPage />} />,
+        <Route path="/landing" element={<Website />} />,
       </Routes>
     </Router>
   );

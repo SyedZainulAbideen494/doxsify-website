@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-glow: #5b5bff;
+  --secondary-glow: #9b5de5;
+  --text-color: #f0f0f0;
+  --subtext-color: #aaa;
+}
+
+/* Header with floating sticky feel */
+.header__hero {
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  padding: 16px 32px;
+  position: sticky;
+  top: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(15, 15, 15, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  animation: floatIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Logo */
+.logo__hero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--primary-glow);
+  letter-spacing: 0.5px;
+}
+
+.logo-icon__hero {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px var(--primary-glow));
+}
+
+/* CTA Link */
+.nav-link__hero {
+  color: white;
+  background: linear-gradient(135deg, var(--secondary-glow), var(--primary-glow));
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(91, 91, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link__hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.4s ease;
+}
+
+.nav-link__hero:hover::after {
+  left: 100%;
+}
+
+.nav-link__hero:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 24px rgba(91, 91, 255, 0.5);
+}
+
+/* Fade-in animation */
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header__hero {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+  }
+
+  .logo__hero {
+    font-size: 1.4rem;
+  }
+
+  .nav-link__hero {
+    padding: 8px 20px;
+  }
+}

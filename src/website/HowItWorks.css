@@ -1,0 +1,103 @@
+/* Section Styling */
+.how-it-works__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px; /* Add some space on the bottom */
+    width: 100%; /* Ensure the section takes full width */
+    max-width: 1200px; /* Optional: max width for better readability */
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-out;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Glass border */
+    margin-left: auto;
+    margin-right: auto; /* Center horizontally */
+}
+
+/* Content Section */
+.how-it-works__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px; /* Optional: limit the content width */
+}
+
+/* Text Section */
+.how-it-works__text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.how-it-works__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-glow);
+}
+
+.how-it-works__description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-weight: 400;
+}
+
+/* Image Section */
+.how-it-works__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.how-it-works__img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .how-it-works__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-it-works__title {
+        font-size: 2rem;
+    }
+
+    .how-it-works__description {
+        font-size: 1.1rem;
+    }
+
+    .how-it-works__image {
+        margin-top: 30px;
+    }
+
+    .how-it-works__img {
+        max-width: 400px;
+    }
+}
