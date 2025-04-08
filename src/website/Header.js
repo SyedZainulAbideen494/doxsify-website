@@ -10,7 +10,7 @@ const Header = () => {
         <img src={logoIcon} alt="Logo" className="logo-icon__hero" />
         <span></span>
       </div>
-      <a href="#demo" className="nav-link__hero">Try Demo</a>
+      <a href="https://doxsify.vercel.app/download" className="nav-link__hero">Get app</a>
     </header>
   );
 };
