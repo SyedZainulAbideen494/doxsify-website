@@ -10,7 +10,9 @@ const CTASection = () => {
         <p className="cta-subtext">
           Experience the future of healthcare with AI-driven precision. Get personalized diagnosis, prescriptions, and treatment plans in an instant.
         </p>
+        <a href="https://doxsify.vercel.app/download">
         <button className="cta-btn">Get App</button>
+        </a>
       </div>
     </section>
   );

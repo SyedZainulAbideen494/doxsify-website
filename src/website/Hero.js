@@ -18,7 +18,7 @@ const Hero = () => {
               Diagnose. Prescribe. Treat. Instantly.<br />
               Built to out-think doctors.
             </p>
-            <a href="#demo" className="cta-button__hero">Launch the Future</a>
+            <a href="https://doxsify.vercel.app/download" className="cta-button__hero">Launch the Future</a>
           </div>
           <div className="mockup-container__hero">
             <img src={phoneMockup} alt="App UI" className="phone-mockup__hero" />
