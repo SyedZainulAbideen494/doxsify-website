@@ -50,7 +50,7 @@ const Website = () => {
   );
 }
 return (
-    <div className="App">
+    <section >
 
       <Header/>
         <Hero/>
@@ -58,7 +58,7 @@ return (
         <ComparisonSection/>
         <CTASection/>
 
-    </div>
+    </section>
   );
 };
 

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DoxsifyLandingPage from "./landing page/DoxsifyLandingPage"; // Ensure path is correct
 import ComingSoonPage from "./coming coon/ComingSoonPage";
 import Website from "./website/websiteMain";
+import './App.css'
 
 function App() {
   console.log("App is running");
